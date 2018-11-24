@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/foodieshop
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: yanghao
+    type: com.alibaba.druid.pool.DruidDataSource
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+mybatis:
+  #实体类所在包
+  type-aliases-package: com.qfedu.foodieshop.pojo
+  #mapper.xml所在位置
+  mapper-locations: classpath:mapper/*.xml
+
+
+server:
+  port: 8081
